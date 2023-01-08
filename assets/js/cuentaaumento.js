@@ -5,7 +5,7 @@ window.onload=function () {
     if (timeEnd > timeStart)
     {
         var diff = timeEnd.getTime() - timeStart.getTime();
-        document.getElementById("DivCuenta").innerHTML = '<h3 class="f-w-300">89</h3>'+Math.round(diff / (1000 * 60 * 60 * 24))+'<span class="d-block text-uppercase">DÍAS DE ESTA BONITA HISTORIA.</span>';
+        document.getElementById("DivCuenta").innerHTML = '<h3 class="f-w-300">'+Math.round(diff / (1000 * 60 * 60 * 24))+'</h3><span class="d-block text-uppercase">DÍAS DE ESTA BONITA HISTORIA.</span>';
     }
     else if (timeEnd != null && timeEnd < timeStart) {
         alert("La fecha final de la promoción debe ser mayor a la fecha inicial");
